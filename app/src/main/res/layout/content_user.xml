@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cg.uiapp.User"
+    tools:showIn="@layout/activity_user">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#4f040000"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentStart="false"
+        android:padding="0dp"
+        android:id="@+id/topHolder"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="210dp"
+            android:layout_height="35dp"
+            android:id="@+id/logo"
+            android:src="@drawable/logo2"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp" />
+
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="39dp"
+            android:id="@+id/menu"
+            android:src="@drawable/menu"
+            android:layout_alignBottom="@+id/topHolder"
+            android:layout_alignEnd="@+id/topHolder"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="95dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/topHolder"
+        android:id="@+id/userHolder"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="154dp"
+            android:layout_height="103dp"
+            android:id="@+id/userProfile"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/noprofile" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/myAccount">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="MyAccount"
+                android:id="@+id/account"
+                android:layout_marginTop="10dp"
+                android:textColor="#0A86C9" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Firstname: John"
+                android:id="@+id/firstname" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Secondname: Adison"
+                android:id="@+id/secondname" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="IBAN: ROBTRL800080008"
+                android:id="@+id/iban" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="170dp"
+        android:background="#0A86C9"
+        android:id="@+id/nameOf">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="my transactions"
+                android:id="@+id/title"
+                android:textSize="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:textColor="#ffffff"
+                android:fontFamily="Gotham" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/money"
+                android:src="@drawable/money2"
+                android:layout_marginLeft="40dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/textView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="270dp"
+        android:id="@+id/transactions">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/blackBoxTransactions"
+            android:src="@drawable/transactions" />
+    </LinearLayout>
+
+</RelativeLayout>
