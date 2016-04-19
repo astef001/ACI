@@ -1,4 +1,4 @@
-package cg.uiapp;
+/*package cg.uiapp;
 
 import java.io.IOException;
 import java.io.StringReader;
@@ -33,7 +33,7 @@ public class XMLParser {
 	/**
 	 * Getting XML from URL making HTTP request
 	 * @param url string
-	 * */
+	 * *//*
 	public String getXmlFromUrl(String url) {
 		String xml = null;
 
@@ -60,7 +60,7 @@ public class XMLParser {
 	/**
 	 * Getting XML DOM element
 	 * @param XML string
-	 * */
+	 * *//*
 	public Document getDomElement(String xml){
 		Document doc = null;
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
@@ -88,7 +88,7 @@ public class XMLParser {
 	
 	/** Getting node value
 	  * @param elem element
-	  */
+	  *//*
 	 public final String getElementValue( Node elem ) {
 	     Node child;
 	     if( elem != null){
@@ -107,9 +107,10 @@ public class XMLParser {
 	  * Getting node value
 	  * @param Element node
 	  * @param key string
-	  * */
+	  * *//*
 	 public String getValue(Element item, String str) {		
 			NodeList n = item.getElementsByTagName(str);		
 			return this.getElementValue(n.item(0));
 		}
 }
+*/

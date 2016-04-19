@@ -23,6 +23,7 @@
             android:name=".User"
             android:label="@string/title_activity_user"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
     </application>
-
+    <uses-permission android:name="android.permission.INTERNET"/>
 </manifest>
